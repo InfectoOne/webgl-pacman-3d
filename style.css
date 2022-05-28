@@ -1,0 +1,107 @@
+body{
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: "Century Gothic";
+
+}
+
+#glCanvas{
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+#commandInfo{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 22vw;
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  padding:  5px;
+  background: rgba(255,255,255,0.1);
+  color: white;
+}
+
+#commandInfo > div{
+  width: 100%;
+  display: flex;
+}
+
+#commandInfo > div > b{
+  width: 20%;
+}
+
+#hint{
+  font-size: 0.8em;
+  margin-top: 40px;
+}
+
+#modeInfo{
+  position:absolute; 
+  top: 10px;
+  right: 10px;
+  background: rgba(255,255,255,0.1);
+  color: white;
+  padding: 10px;
+}
+
+#lightInfo {
+  position:absolute; 
+  top: 70px;
+  right: 10px;
+  background: rgba(255,255,255,0.1);
+  color: white;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+#startScreen, #gameOverScreen{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: midnightblue;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 3em;
+  transition: top 0.5s;
+}
+
+#gameOverScreen{
+  top: -100vh;
+  background: rgba(10,23,200,0.5)
+}
+
+.button{
+  padding: 20px 40px;
+  font-size: 20px;
+  margin: 20px;
+  font-weight: bold;
+  border: 4px solid #FFCC00;
+  border-radius: 10px;
+}
+
+.button:hover{
+  cursor: pointer;
+  background: #040a47;
+}
+
+#status{
+  padding: 20px;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  font-weight: bold;
+  background: rgba(252, 211, 3 ,0.5)
+}

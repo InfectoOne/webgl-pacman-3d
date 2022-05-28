@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>WebGL Pacman 3D</title>
+      <link href="style.css" rel="stylesheet">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script type="text/javascript" src="gl-matrix/gl-matrix-min.js"></script>
+      <script type="text/javascript" src="GourardShader.js"></script>
+      <script type="text/javascript" src="PhongShader.js"></script>
+      <script type="text/javascript" src="shaderInitializer.js"></script>
+      <script type="text/javascript" src="cameraMovement.js"></script>
+      <script type="text/javascript" src="PointLightSource.js"></script>
+      <script type="text/javascript" src="shapes/Shape.js"></script>
+      <script type="text/javascript" src="shapes/Cube.js"></script>
+      <script type="text/javascript" src="shapes/Sphere.js"></script>
+      <script type="text/javascript" src="PacmanFacingDirection.js"></script>
+      <script type="text/javascript" src="shapes/Pacman.js"></script>
+      <script type="text/javascript" src="shapes/Labyrinth.js"></script>
+      <script type="text/javascript" src="main.js"></script>
+  </head>
+  <body>
+    <div id="startScreen">
+      <img src="./assets/logo.png" height="200" width="200"/>
+      <div>WebGL Pacman</div>
+      <div class="button" onclick="startGame()">Play</div>
+    </div>
+    <canvas id="glCanvas"></canvas>
+    <div id="status">
+      <div>
+        Score:
+        <span id="score">0</span>
+      </div>
+    </div>
+    <div id="gameOverScreen">
+      <div>You won!</div>
+      <div style="font-size: 0.5em;">Play again?</div>
+      <div class="button" onclick="startGame()">Yes</button>
+    </div>
+  </body>
+</html>
